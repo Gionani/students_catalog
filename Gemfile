@@ -15,6 +15,7 @@ gem 'devise'
 
 group :development, :test do
   gem 'byebug'
+   gem 'factory_girl_rails'
     gem 'rspec-rails'
 end
 
