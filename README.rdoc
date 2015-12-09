@@ -1,28 +1,7 @@
-== README
+Probando codigo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Instalar las gemas de rspec, capybara y selenium-webdriver a su equipo de trabajo.
+* Agregar pruebas de unidad a los modelos (si aplica).
+* Agregar pruebas de controlador a los controladores (valga la redundancia).
+* Agregar pruebas de integración utilizando capybara y selenium simulando la interacción del usuario (crear estudiante, borrar estudiante, editar estudiante, llenar mal el formulario y ver los errores de validación).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
