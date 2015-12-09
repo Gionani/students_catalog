@@ -2,4 +2,3 @@
 * Agregar pruebas de unidad a los modelos (si aplica).
 * Agregar pruebas de controlador a los controladores (valga la redundancia).
 * Agregar pruebas de integración utilizando capybara y selenium simulando la interacción del usuario (crear estudiante, borrar estudiante, editar estudiante, llenar mal el formulario y ver los errores de validación).
-
