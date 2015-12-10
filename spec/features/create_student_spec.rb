@@ -6,7 +6,7 @@ feature "Create student" do
 
 			click_link "Sign up"
 
-			fill_in "Email", with: "person@email.com"
+			fill_in "Email", with: "juan@email.com"
 			fill_in "Password", with: "12345678"
 			fill_in "Password confirmation", with: "12345678"
 
@@ -14,10 +14,10 @@ feature "Create student" do
 		
 		click_on "Crear nuevo estudiante"
 		
-			fill_in "Nombre(s)", with: "Lolita"
-			fill_in "Apellidos", with: "Pérez"
-			fill_in "Número de control", with: "11460239"
-			fill_in "Semestre", with: "9"
+			fill_in "Nombre(s)", with: "pedro"
+			fill_in "Apellidos", with: "vazquez"
+			fill_in "Número de control", with: "11460501"
+			fill_in "Semestre", with: "1"
 
 			click_on "Guardar"
 
@@ -30,7 +30,7 @@ feature "Create student" do
 
 		click_link "Sign up"
 
-			fill_in "Email", with: "person2@email.com"
+			fill_in "Email", with: "javier@email.com"
 			fill_in "Password", with: "12345678"
 			fill_in "Password confirmation", with: "12345678"
 
