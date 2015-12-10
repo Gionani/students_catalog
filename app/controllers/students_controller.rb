@@ -1,4 +1,9 @@
 class StudentsController < ApplicationController
+      rescue_from ActiveRecord::RecordNotFound do |e|
+    render text: "The page you're looking for doesn't exists",
+      status: 404
+  end
+
   def index
     @students = Student.all
   end
@@ -29,7 +34,7 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
 
     if @student.update(student_params)
-      redirect_to @student, notice: 'Student was successfully updated.'
+      redirect_to root_path, notice: 'Student was successfully updated.'
     else
       render :edit, status: :unprocessable_entity
     end
@@ -38,7 +43,7 @@ class StudentsController < ApplicationController
   def destroy
     @student = Student.find(params[:id])
     @student.destroy
-    redirect_to students_url, notice: 'Student was successfully destroyed.'
+    redirect_to root_path, notice: 'Student was successfully destroyed.'
   end
 
   private
